@@ -1,0 +1,128 @@
+#homepageContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+header {
+    display: inline-flex;
+    justify-content: center;
+    width: 100vw;
+    color: #000;
+}
+
+#quoteContainer {
+    font-family:Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: .5fr 1.25fr .25fr .5fr .5fr;
+    grid-gap: 0;
+    background: linear-gradient(to left, rgb(240, 239, 239),rgb(216, 214, 214));
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+    padding: 1rem 2rem 2rem 2rem;
+    width: 30rem;
+    top: 10rem;
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 2rem;
+    box-shadow: 4px 4px 4px rgba(82, 82, 82, 0.5);
+}
+
+.page-title {
+    grid-column: 1 / span 2;
+}
+
+.quote {
+    font-weight: 500;
+    grid-column: 1 / span 2;
+}
+
+.author {
+    font-weight: 300;
+    grid-column: 1 / span 2;
+}
+.new-btn {
+    grid-column: 1 / span 2;
+    background: linear-gradient(to bottom left, rgb(200, 105, 255),rgb(170, 105, 255),rgb(105, 145, 255));
+    justify-self: center;
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid rgb(124, 0, 207);
+    outline: none;
+    border-radius: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.new-btn:hover {
+    background: linear-gradient(to bottom left, rgb(159, 82, 204),rgb(128, 78, 194),rgb(81, 113, 201));
+}
+
+.new-btn:active {
+    background: linear-gradient(to top right, rgb(159, 82, 204),rgb(128, 78, 194),rgb(81, 113, 201));
+    box-shadow: inset 1px 1px 1px #000;
+    transform: scale(.99);
+}
+
+.subscribe-anchor {
+    font-size: .85rem;
+    margin-top: 2rem;
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.subscribe-link {
+    color: rgb(128, 78, 194);
+    text-decoration: underline;
+}
+
+.subscribe-link:active, .subscribe-link:visited {
+    color: rgb(63, 34, 100);
+    text-decoration: underline;
+}
+
+/* .share-btn {
+    grid-column: 2;
+    background: linear-gradient(to bottom left, rgb(200, 105, 255),rgb(170, 105, 255),rgb(105, 145, 255));
+    justify-self: center;
+    align-self: baseline;
+    padding: .70rem 3.1rem .70rem 3.1rem;
+    border: 1px solid rgb(124, 0, 207);
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+
+.share-btn:hover {
+    background: linear-gradient(to bottom left, rgb(159, 82, 204),rgb(128, 78, 194),rgb(81, 113, 201));
+}
+
+.share-btn:active {
+    background: linear-gradient(to top right, rgb(159, 82, 204),rgb(128, 78, 194),rgb(81, 113, 201));
+    box-shadow: inset 1px 1px 1px #000;
+    transform: scale(.99);
+} */
+
+.subscribe-btn {
+    position: absolute;
+    background: linear-gradient(to bottom right, rgb(252, 252, 252),rgb(196, 196, 196));
+    right: 0;
+    justify-self: center;
+    font-weight: 600;
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 2rem;
+    margin-right: 1rem;
+}
+
+.subscribe-btn:hover {
+    background: linear-gradient(to bottom right, rgb(224, 224, 224),rgb(184, 184, 184));
+}
+
+.subscribe-btn:active {
+    background: linear-gradient(to bottom right, rgb(224, 224, 224),rgb(184, 184, 184));
+    box-shadow: inset 1px 1px 1px #000;
+    transform: scale(.98);
+}
