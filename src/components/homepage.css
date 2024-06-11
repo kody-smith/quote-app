@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 header {
@@ -23,11 +23,18 @@ header {
     justify-content: center;
     align-self: center;
     padding: 1rem 2rem 2rem 2rem;
-    width: 30rem;
+    width: 50vw;
     top: 10rem;
     border: 1px solid rgb(109, 109, 109);
     border-radius: 2rem;
     box-shadow: 4px 4px 4px rgba(82, 82, 82, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    #quoteContainer {
+        width: 70vw;
+        top: 5rem;
+    }
 }
 
 .page-title {
@@ -44,12 +51,13 @@ header {
     grid-column: 1 / span 2;
 }
 .new-btn {
+    color: #000;
     grid-column: 1 / span 2;
     background: linear-gradient(to bottom left, rgb(200, 105, 255),rgb(170, 105, 255),rgb(105, 145, 255));
     justify-self: center;
     height: 3rem;
     width: 8rem;
-    border: 1px solid rgb(124, 0, 207);
+    border: 1px solid rgb(0, 0, 0);
     outline: none;
     border-radius: 2rem;
     font-weight: 600;

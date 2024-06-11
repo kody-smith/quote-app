@@ -18,6 +18,7 @@ export default function Homepage() {
 
 
     useEffect(() => {
+        document.body.style.overflow = "hidden";
         // Fetch the data from the JSON file
         fetch("/quotes.json")
         .then(response => response.json())
